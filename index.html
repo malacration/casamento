@@ -17,13 +17,12 @@
         <div class="px-4 py-5 my-5 text-center">
             <div class="container center">
                 <h1>Quer casar comigo?</h1>
-                
                 <div class="row">
-                    <div class="col-lg-6">
-                        <button id="sim" onmouseover="clickSim()" class="btn btn-primary btn-lg px-4 gap-3 float-end" style="z-index: 100;">Sim</button> 
+                    <div class="col">
+                        <button id="sim" onmouseover="clickSim()" class="btn btn-primary float-end" style="z-index: 100;">Sim</button> 
                     </div>
-                    <div class="col-lg-6">
-                        <button onclick="clickNao()" class="btn btn-danger btn-lg px-4 gap-3 float-start">Não</button>
+                    <div class="col">
+                        <button onclick="clickNao()" class="btn btn-danger float-start">Não</button>
                     </div>
                 </div>
             </div>
@@ -33,8 +32,8 @@
     
     <script>
         function clickSim(){
-            var top = getRandomIntInclusive(-150, screen.height/3)
-            var right = getRandomIntInclusive(-30, screen.width/3)
+            var top = getRandomIntInclusive(-1*(screen.height/3), screen.height/3)
+            var right = getRandomIntInclusive(-25, screen.width/3)
             var botaoSim = document.getElementById('sim')
             botaoSim.style.marginTop = top+"px";
             botaoSim.style.marginRight = right+"px";
